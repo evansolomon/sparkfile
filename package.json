@@ -1,6 +1,6 @@
 {
   "name": "sparkfile",
-  "version": "0.1.0",
+  "version": "0.1.0-dev",
   "description": "A CLI scratch pad for ideas",
   "main": "lib/cli",
   "scripts": {
