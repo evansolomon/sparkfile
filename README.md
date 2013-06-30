@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/evansolomon/sparkfile.png?branch=master)](https://travis-ci.org/evansolomon/sparkfile)
+
 # Spark File
 
 A command line tool for tracking thoughts and ideas.  Inspired by [The Spark File](https://medium.com/the-writers-room/8d6e7df7ae58).
