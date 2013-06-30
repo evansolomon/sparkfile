@@ -4,7 +4,8 @@
   "description": "A CLI scratch pad for ideas",
   "main": "lib/cli",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "prepublish": "grunt"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,6 @@
     "url": "https://github.com/evansolomon/sparkfile/issues"
   },
   "bin": "./bin/sparkfile",
-  "scripts": {
-    "prepublish": "grunt"
-  },
   "devDependencies": {
     "should": "~1.2.2",
     "coffee-script": "~1.6.3",
