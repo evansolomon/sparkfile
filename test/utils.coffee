@@ -1,9 +1,11 @@
+require 'coffee-script'
+
 fs     = require 'fs'
 path   = require 'path'
 exec   = require('child_process').exec
 should = require 'should'
 
-utils = require '../lib/utils'
+utils = require '../src/utils'
 
 describe 'Number padding', ->
   it 'Should return strings', ->

@@ -1,10 +1,12 @@
+require 'coffee-script'
+
 fs     = require 'fs'
 path   = require 'path'
 exec   = require('child_process').exec
 should = require 'should'
 
-notes = require '../lib/notes'
-utils = require '../lib/utils'
+notes = require '../src/notes'
+utils = require '../src/utils'
 
 testFile = 'test/tmp/Sparkfile'
 testDir  = path.dirname testFile

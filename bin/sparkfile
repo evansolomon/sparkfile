@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+// Let the CoffeeScript module compile the app at runtime
+require('coffee-script');
+
 var path = require('path');
 var app = require(path.dirname(__dirname));
 
