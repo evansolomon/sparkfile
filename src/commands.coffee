@@ -7,4 +7,4 @@ module.exports =
     notes.write obj.parent.location, words.join ' '
 
   edit: (obj) ->
-    exec "open '#{obj.parent.location}'"
+    exec "open #{obj.parent.location}"
