@@ -12,6 +12,10 @@ spark.command('*')
   .description('Your latest thought... [--location LOCATION] ')
   .action(commands.add)
 
+spark.command('edit')
+  .description('Open your Sparkfile in your default editor')
+  .action(commands.edit)
+
 module.exports.run = (argv) ->
   parsed = spark.parse argv
   spark.outputHelp() unless parsed.args.length
