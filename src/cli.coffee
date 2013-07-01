@@ -13,4 +13,6 @@ spark.command('*')
   .action(commands.add)
 
 module.exports.run = (argv) ->
-  spark.parse argv
+  parsed = spark.parse argv
+  spark.outputHelp() unless parsed.args.length
+  parsed
