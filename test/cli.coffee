@@ -1,12 +1,14 @@
+require 'coffee-script'
+
 fs     = require 'fs'
 path   = require 'path'
 exec   = require('child_process').exec
 should = require 'should'
 
-utils = require '../lib/utils'
+utils = require '../src/utils'
 
 # We have to wait to load this until process.argv is overwritten
-cli = require '../lib/cli'
+cli = require '../src/cli'
 
 testFile = 'test/tmp/Sparkfile'
 testDir  = path.dirname testFile

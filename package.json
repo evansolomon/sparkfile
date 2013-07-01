@@ -2,7 +2,7 @@
   "name": "sparkfile",
   "version": "0.1.0-dev",
   "description": "A CLI scratch pad for ideas",
-  "main": "lib/cli",
+  "main": "src/cli",
   "scripts": {
     "test": "grunt test",
     "prepublish": "grunt"
@@ -24,13 +24,12 @@
   "bin": "./bin/sparkfile",
   "devDependencies": {
     "should": "~1.2.2",
-    "coffee-script": "~1.6.3",
     "mocha": "~1.11.0",
     "grunt": "~0.4.1",
-    "grunt-contrib-coffee": "~0.7.0",
     "grunt-contrib-watch": "~0.4.4"
   },
   "dependencies": {
+    "coffee-script": "~1.6.3",
     "commander": "~1.2.0"
   }
 }
