@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "coffee-script": "~1.6.3",
-    "commander": "~1.2.0"
+    "commander": "~1.2.0",
+    "moment": "~2.0.0"
   }
 }

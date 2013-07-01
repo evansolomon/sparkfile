@@ -1,16 +1,10 @@
-fs   = require 'fs'
-path = require 'path'
+fs     = require 'fs'
+path   = require 'path'
+moment = require 'moment'
 
 module.exports =
-  padNumber: (number) ->
-    number = number.toString()
-    number = "0#{number}" while number.length < 2
-    number
-
   ymd: ->
-    date = new Date
-    yearMonthDay = [date.getFullYear(), date.getMonth() + 1, date.getDate()]
-    yearMonthDay.map(@padNumber).join '-'
+    moment().format('YYYY-MM-DD')
 
   hasDate: (sparkContent) ->
     dateString = "\n[#{@ymd()}]\n"
