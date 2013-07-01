@@ -7,16 +7,6 @@ should = require 'should'
 
 utils = require '../src/utils'
 
-describe 'Number padding', ->
-  it 'Should return strings', ->
-    utils.padNumber(123).should.be.a 'string'
-
-  it 'Should pad short numbers', ->
-    utils.padNumber(1).should.equal '01'
-
-  it 'Should preserve long numbers', ->
-    utils.padNumber(100).should.equal '100'
-
 describe 'Has date', ->
   it 'Should find date markers', ->
     testString = """
