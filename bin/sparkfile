@@ -3,4 +3,4 @@
 var path = require('path');
 var app = require(path.dirname(__dirname));
 
-app.run();
+app.run(process.argv);
