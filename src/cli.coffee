@@ -1,5 +1,3 @@
-fs    = require 'fs'
-path  = require 'path'
 spark = require 'commander'
 
 commands = require './commands'
