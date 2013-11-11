@@ -5,10 +5,6 @@ module.exports = (grunt) ->
 
   # Config
   grunt.initConfig
-    mocha:
-      default:
-        src: ['test/*.coffee']
-
     watch:
       src:
         files: ['src/**/*.coffee']
