@@ -1,5 +1,6 @@
-fs     = require 'fs'
-path   = require 'path'
+fs   = require 'fs'
+path = require 'path'
+
 moment = require 'moment'
 
 module.exports =

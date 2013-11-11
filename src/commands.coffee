@@ -1,5 +1,6 @@
-exec = require('child_process').exec
-_    = require 'lodash'
+{exec} = require 'child_process'
+
+_ = require 'lodash'
 
 notes = require './notes'
 
