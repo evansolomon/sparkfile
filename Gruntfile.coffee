@@ -1,8 +1,7 @@
-Mocha = require 'mocha'
-
 module.exports = (grunt) ->
   # Helpers
   grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-simple-mocha'
 
   # Config
   grunt.initConfig
@@ -19,22 +18,13 @@ module.exports = (grunt) ->
         files: ['test/**/*.coffee']
         tasks: ['test']
 
+    simplemocha:
+      options:
+        reporter: 'spec'
+        compilers: 'coffee:coffee-script'
+      all: {src: 'test/*'}
+
 
   # Tasks
   grunt.registerTask 'default', ['test']
-  grunt.registerTask 'test', 'mocha'
-
-  grunt.registerMultiTask 'mocha', 'Run mocha unit tests.', ->
-    done = @async()
-
-    mocha = new Mocha
-      reporter: 'spec'
-
-    for files in @files
-      for file in files.src
-        mocha.addFile file
-
-    mocha.run (failures) =>
-      if failures
-        grunt.log.error(failures).writeln()
-      done()
+  grunt.registerTask 'test', 'simplemocha'
